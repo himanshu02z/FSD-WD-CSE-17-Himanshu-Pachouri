@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Application Form</title>
+</head>
+<body>
+
+  <h2>Application Form</h2>
+
+  <form action="#" method="post" enctype="multipart/form-data">
+
+    <!-- Full Name -->
+    <label for="fullName">Full Name:</label><br>
+    <input type="text" id="fullName" name="fullName" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <!-- Position -->
+    <label for="position">Position Applying For:</label><br>
+    <select id="position" name="position" required>
+      <option value="">--Select--</option>
+      <option value="software_engineer">Software Engineer</option>
+      <option value="designer">Designer</option>
+      <option value="marketing">Marketing</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <!-- Education -->
+    <label for="education">Education:</label><br>
+    <textarea id="education" name="education" rows="4" cols="50" placeholder="Enter your educational background..."></textarea><br><br>
+
+    <!-- Work Experience -->
+    <label for="experience">Work Experience:</label><br>
+    <textarea id="experience" name="experience" rows="4" cols="50" placeholder="Enter your work experience..."></textarea><br><br>
+
+    <!-- Resume Upload -->
+    <label for="resume">Upload Resume (PDF only):</label><br>
+    <input type="file" id="resume" name="resume" accept=".pdf"><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit Application">
+
+  </form>
+
+</body>
+</html>
