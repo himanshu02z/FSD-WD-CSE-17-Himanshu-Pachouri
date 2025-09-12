@@ -1,37 +1,54 @@
- <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Table Layout (HTML only)</title>
-  </head>
-  <body>
-    <table border="1" width="100%" cellpadding="8" cellspacing="0">
-      <tr>
-        <td rowspan="2" width="18%" align="center" valign="middle"><b>Logo</b></td>
-        <td colspan="5" align="center" valign="middle"><font size="+2"><b>Web Site Name</b></font></td>
-      </tr>
-      <tr align="center">
-        <td width="14%">Home</td>
-        <td width="14%">Login</td>
-        <td width="20%">Registration</td>
-        <td width="24%">Catalogue</td>
-        <td width="10%">Cart</td>
-      </tr>
-      <tr>
-        <td valign="top">
-          <table border="0" width="100%" cellpadding="4" cellspacing="0">
-            <tr><td>CSE</td></tr>
-            <tr><td>ECE</td></tr>
-            <tr><td>EEE</td></tr>
-            <tr><td>CIVIL</td></tr>
-            <tr><td>MECH</td></tr>
-          </table>
-        </td>
-        <td colspan="5" align="center" valign="middle" height="200">
-          <p><b></b></p>
-          <p></p>
-        </td>
-      </tr>
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+    <style>
+        th{
+            background-color: #f8bf8f;
+        }
+        .subheading{
+            background-color: #fce9d9;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="3" style="width: 500px; height: 300px;">
+        <tr>
+            <th>Logo</th>
+            <th colspan="4">Website Name</th>
+        </tr>
+
+        <tr class="subheading">
+            <td>Home</td>
+            <td>Login</td>
+            <td>Registeration</td>
+            <td>Catalogue</td>
+            <td>Cart</td>
+        </tr>
+
+        <tr>
+            <td><a href="Experiment1_CSE.html" target="iframe_a">CSE</a></td>
+            <td rowspan="4" colspan="4" style="text-align: center;"><iframe src="Experiment1_WebDesc.html"
+                    name="iframe_a" title="Iframe Example" style="border: none;"></iframe></td>
+        </tr>
+
+        <tr>
+            <td><a href="Experiment1_ECE.html" target="iframe_a">ECE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="Experiment1_EEE.html" target="iframe_a">EEE</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="Experiment1_CIVIL.html" target="iframe_a">CIVIL</a></td>
+        </tr>
+
     </table>
-  </body>
+</body>
+
 </html>
