@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogue Page</title>
+    <style>
+        table {
+            width: 95%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #f7c97c;
+        }
+        .book-img {
+            width: 90px;
+            height: 110px;
+        }
+        .btn {
+            background-color: #f0c040;
+            border: 1px solid #666;
+            padding: 6px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            background-color: #e0a020;
+        }
+    </style>
+</head>
+<body>
+
+<h3 style="text-align:center;">CATALOGUE PAGE</h3>
+
+<table>
+    <tr>
+        <th>Logo</th>
+        <th>Home</th>
+        <th>Login</th>
+        <th>Registration</th>
+        <th>Catalogue</th>
+        <th>Cart</th>
+    </tr>
+    <tr>
+        <td rowspan="4">
+            CSE <br><br>
+            ECE <br><br>
+            EEE <br><br>
+            CIVIL
+        </td>
+        <td colspan="2">
+            <img src="https://m.media-amazon.com/images/I/51N7CMVQKQL.jpg" class="book-img" alt="XML Bible">
+        </td>
+        <td>
+            <b>Book:</b> XML Bible <br>
+            <b>Author:</b> Winston <br>
+            <b>Publication:</b> Wiley
+        </td>
+        <td>$40.5</td>
+        <td><button class="btn">Add to cart</button></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img src="https://m.media-amazon.com/images/I/51h1Zy6dSCL.jpg" class="book-img" alt="AI Book">
+        </td>
+        <td>
+            <b>Book:</b> AI <br>
+            <b>Author:</b> S. Russel <br>
+            <b>Publication:</b> Prentice Hall
+        </td>
+        <td>$63</td>
+        <td><button class="btn">Add to cart</button></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img src="https://m.media-amazon.com/images/I/41jEbK-jG+L.jpg" class="book-img" alt="Java 2 Book">
+        </td>
+        <td>
+            <b>Book:</b> Java 2 <br>
+            <b>Author:</b> Watson <br>
+            <b>Publication:</b> BPB Publications
+        </td>
+        <td>$35.5</td>
+        <td><button class="btn">Add to cart</button></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img src="https://m.media-amazon.com/images/I/51Bz60iDotL.jpg" class="book-img" alt="HTML in 24 Hours">
+        </td>
+        <td>
+            <b>Book:</b> HTML in 24 Hours <br>
+            <b>Author:</b> Sam Peter <br>
+            <b>Publication:</b> Sam Publications
+        </td>
+        <td>$50</td>
+        <td><button class="btn">Add to cart</button></td>
+    </tr>
+</table>
+
+</body>
+</html>
