@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Image Example</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f3f3f3;
+    }
+
+    .circle-image {
+      width: 200px;              /* Size of the image */
+      height: 200px;
+      border-radius: 50%;        /* Makes it circular */
+      object-fit: cover;         /* Keeps aspect ratio */
+      border: 4px solid #333;    /* Optional: border around circle */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    }
+  </style>
+</head>
+<body>
+  <img src="https://thumbs.dreamstime.com/b/paris-eiffel-tower-river-seine-sunset-france-one-most-iconic-landmarks-107376702.jpg" alt="Circular Image" class="circle-image">
+</body>
+</html>
