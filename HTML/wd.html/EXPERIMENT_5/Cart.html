@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+        /* Basic styling to match the image */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* Main table for layout */
+        .main-table {
+            width: 100%;
+            border-collapse: collapse; /* Removes double borders */
+            border: 2px solid black;
+        }
+        /* Style for all cells */
+        .main-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        /* Style for the main website name header */
+        .site-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        /* Style for the "Total amount" label cell */
+        .total-label {
+            text-align: right;
+            font-weight: bold;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="main-table">
+        <tr>
+            <td style="width: 15%;">Logo</td>
+            <td colspan="4" class="site-name">Web Site Name</td>
+        </tr>
+        
+        <tr>
+            <td>Home</td>
+            <td>Login</td>
+            <td>Registration</td>
+            <td>Catalogue</td>
+            <td>Cart</td>
+        </tr>
+
+        <tr>
+            <td>CSE</td>
+            <td><b>Book name</b></td>
+            <td><b>Price</b></td>
+            <td><b>Quantity</b></td>
+            <td><b>Amount</b></td>
+        </tr>
+
+        <tr>
+            <td>ECE</td>
+            <td>Java 2</td>
+            <td>$35.5</td>
+            <td>2</td>
+            <td>$70</td>
+        </tr>
+
+        <tr>
+            <td>EEE</td>
+            <td>XML bible</td>
+            <td>$40.5</td>
+            <td>1</td>
+            <td>$40.5</td>
+        </tr>
+
+        <tr>
+            <td>CIVIL</td>
+            <td colspan="3" class="total-label">Total amount</td>
+            <td>=$130.5</td>
+        </tr>
+    </table>
+
+</body>
+</html>
