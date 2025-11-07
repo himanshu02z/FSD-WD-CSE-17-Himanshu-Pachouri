@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    span {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Registration Form</h2>
+
+  <form id="regForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <span id="nameErr"></span><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <span id="pwdErr"></span><br><br>
+
+    <label for="email">E-mail ID:</label>
+    <input type="text" id="email" name="email">
+    <span id="emailErr"></span><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone">
+    <span id="phoneErr"></span><br><br>
+
+    <label>Sex:</label>
+    <input type="radio" id="male" name="sex" value="Male"> Male
+    <input type="radio" id="female" name="sex" value="Female"> Female<br><br>
+
+    <label>Date of Birth:</label>
+    <select name="day">
+      <option>Day</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+
+    <select name="month">
+      <option>Month</option>
+      <option>January</option>
+      <option>February</option>
+      <option>March</option>
+    </select>
+
+    <select name="year">
+      <option>Year</option>
+      <option>2000</option>
+      <option>2001</option>
+      <option>2002</option>
+    </select><br><br>
+
+    <label>Languages Known:</label><br>
+    <input type="checkbox" name="lang" value="English"> English<br>
+    <input type="checkbox" name="lang" value="Telugu"> Telugu<br>
+    <input type="checkbox" name="lang" value="Hindi"> Hindi<br>
+    <input type="checkbox" name="lang" value="Tamil"> Tamil<br><br>
+
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+  </form>
+
+  <script>
+    const form = document.getElementById('regForm');
+    const nameInput = document.getElementById('name');
+    const pwdInput = document.getElementById('password');
+    const emailInput = document.getElementById('email');
+    const phoneInput = document.getElementById('phone');
+
+    const nameErr = document.getElementById('nameErr');
+    const pwdErr = document.getElementById('pwdErr');
+    const emailErr = document.getElementById('emailErr');
+    const phoneErr = document.getElementById('phoneErr');
+
+    function validate() {
+      let valid = true;
+
+      nameErr.textContent = '';
+      pwdErr.textContent = '';
+      emailErr.textContent = '';
+      phoneErr.textContent = '';
+
+      // Validate Name
+      if (nameInput.value.trim().length < 6) {
+        nameErr.textContent = 'Name must be at least 6 characters long';
+        valid = false;
+      }
+
+      // Validate Password
+      if (pwdInput.value.length < 6) {
+        pwdErr.textContent = 'Password must be at least 6 characters long';
+        valid = false;
+      }
+
+      // Validate Email
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(emailInput.value.trim())) {
+        emailErr.textContent = 'Enter a valid email address (e.g. name@example.com)';
+        valid = false;
+      }
+
+      // Validate Phone Number
+      const phonePattern = /^[0-9]{10}$/;
+      if (!phonePattern.test(phoneInput.value.trim())) {
+        phoneErr.textContent = 'Phone number must contain exactly 10 digits';
+        valid = false;
+      }
+
+      return valid;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (validate()) {
+        alert('Registration Successful!');
+        form.reset();
+      }
+    });
+
+    nameInput.addEventListener('input', validate);
+    pwdInput.addEventListener('input', validate);
+    emailInput.addEventListener('input', validate);
+    phoneInput.addEventListener('input', validate);
+  </script>
+</body>
+</html>
