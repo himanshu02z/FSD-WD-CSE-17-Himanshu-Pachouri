@@ -1,0 +1,67 @@
+/* ===== Page Background and Font ===== */
+body {
+    background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Header Section ===== */
+.header-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title {
+    font-family: 'Georgia', serif;
+    font-size: 3em;
+    color: #ffdd57;
+    text-shadow: 2px 2px 5px black;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1.5em;
+    color: #f3f3f3;
+}
+
+/* ===== Content Boxes ===== */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ===== Box with Its Own Background Image ===== */
+.special-box {
+    background-image: url('https://images.unsplash.com/photo-1499084732479-de2c02d45fc4?auto=format&fit=crop&w=800&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #222;
+    text-shadow: 1px 1px 4px white;
+}
+
+/* ===== Footer ===== */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 1em;
+    letter-spacing: 1px;
+}
